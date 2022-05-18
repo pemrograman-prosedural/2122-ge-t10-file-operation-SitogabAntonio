@@ -1,5 +1,5 @@
-// NIM - Name
-// NIM - Name
+// 12S21015 - Sitogab Antonio Octavianus Girsang
+// 12S21049 - Jesika Audina Purba
 
 #include <stdio.h>
 #include <string.h>
@@ -10,28 +10,26 @@
 
 int main(int _argc, char **_argv)
 {
-    // Declare Struct
+    
     struct dorm_t *dorms = malloc(100 * sizeof(struct dorm_t));
     struct student_t *students = malloc(100 * sizeof(struct student_t));
 
-    // Student
+    
     char input[100];
     char id[12];
     char student_name[40];
     char year[5];
 
-    // Dorm
+    
     char dorm_name[40];
     unsigned short capacity;
 
-    // For Algoritma use
+    
     char *data;
     int idx_s, idx_d;
     int std = 0, dr = 0;
 
-    // File handling
-
-    // File for dorm
+    
     FILE *fd;
     fd = fopen("storage/dorm-repository.txt", "r");
 
@@ -57,7 +55,7 @@ int main(int _argc, char **_argv)
     }
     fclose(fd);
 
-    // File for student
+    
     FILE *fs;
     fs = fopen("storage/student-repository.txt", "r");
     if (fs == NULL)
@@ -85,7 +83,7 @@ int main(int _argc, char **_argv)
     }
     fclose(fs);
 
-    // Algorithm start here
+    
     do
     {
         fflush(stdin);
