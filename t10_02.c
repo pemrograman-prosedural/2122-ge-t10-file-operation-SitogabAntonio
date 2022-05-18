@@ -58,10 +58,7 @@ int main(int _argc, char **_argv)
     
     FILE *fd;
     fd = fopen("storage/dorm-repository.txt", "r");
-    if (fd == NULL)
-    {
-        NULL;
-    }
+    
     while (fgets(input, 100, fd) != NULL)
     {
         data = strtok(input, "|");

@@ -58,10 +58,7 @@ int main(int _argc, char **_argv)
     
     FILE *fs;
     fs = fopen("storage/student-repository.txt", "r");
-    if (fs == NULL)
-    {
-        NULL;
-    }
+   
     while (fgets(input, 100, fs) != NULL)
     {
         data = strtok(input, "|");
