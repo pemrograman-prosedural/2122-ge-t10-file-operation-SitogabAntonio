@@ -11,4 +11,6 @@
  *
  */
 
+struct dorm_t create_dorm(char *_name, unsigned short _capacity, char *_gender);
+struct student_t create_student(char *_id, char *_name, char *_year, char *_gender);
 #endif

@@ -17,6 +17,6 @@ struct dorm_t
   unsigned short residents_num;
 };
 
-struct dorm_t create_dorm(char *_name, unsigned short _capacity, enum gender_t _gender);
-
+void print_dorm(struct dorm_t *_dorm, int count);
+void print_dorm_detail(struct dorm_t *_dorm, int count);
 #endif
